@@ -6,7 +6,7 @@
     <title>bny-blog</title>
     <link>https://bny64.github.io/</link>
     
-    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
     <pubDate>Mon, 16 Nov 2020 07:36:02 GMT</pubDate>
