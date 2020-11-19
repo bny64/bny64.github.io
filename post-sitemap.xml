@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://bny64.github.io/2020/11/19/ONVIF-jp/</loc>
+        <lastmod>2020-11-19T08:30:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://bny64.github.io/2020/11/15/ONVIF/</loc>
+        <lastmod>2020-11-19T08:30:30.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://bny64.github.io/2020/11/18/seo/</loc>
         <lastmod>2020-11-19T08:20:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -19,22 +35,6 @@
     <url>
         <loc>https://bny64.github.io/2020/11/17/rtsp/</loc>
         <lastmod>2020-11-19T07:57:40.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://bny64.github.io/2020/11/19/ONVIF-jp/</loc>
-        <lastmod>2020-11-19T06:09:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://bny64.github.io/2020/11/15/ONVIF/</loc>
-        <lastmod>2020-11-19T00:31:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
