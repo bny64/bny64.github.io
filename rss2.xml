@@ -9,8 +9,39 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 19 Nov 2020 08:30:40 GMT</pubDate>
+    <pubDate>Fri, 20 Nov 2020 00:11:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>RTSPとは?</title>
+      <link>https://bny64.github.io/2020/11/20/rtsp-jp/</link>
+      <guid>https://bny64.github.io/2020/11/20/rtsp-jp/</guid>
+      <pubDate>Fri, 20 Nov 2020 00:11:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;code&gt;RTSP(real time streaming protocol)&lt;/code&gt; はリアルタイムマルチメディアストリームを制御するためのプロトコルである。&lt;br&gt;RealNetwork社、Netscape社、IBM社などが共同開発を行った。&lt;/p&gt;
+&lt;h4 i</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><code>RTSP(real time streaming protocol)</code> はリアルタイムマルチメディアストリームを制御するためのプロトコルである。<br>RealNetwork社、Netscape社、IBM社などが共同開発を行った。</p><h4 id="RTSPの特徴"><a href="#RTSPの特徴" class="headerlink" title="RTSPの特徴"></a>RTSPの特徴</h4><ul><li><p>多地点ストリーミング応用のための基盤構造</p><ul><li>応用階層でユニキャストまたはマルチキャスト接続の両方を使用する多地点応用で、マルチメディアストリーム制御のためのプロトコル提供という目的を持つが、プロトコルというより基盤構造と見ることができる。<br></li></ul></li><li><p>クライアント/サーバーの形で動作</p><ul><li>構造、文法、動作方式がHTTPと非常に似ている。<br></li></ul></li><li><p>セッション管理</p><ul><li>多地点多数のマルチメディアセッションの設定と制御がRTSPによって制御される。</li><li>RTSPのリソース管理セットアップ及び予約はRSVPで使用可能<br></li></ul></li><li><p>複数のプロトコルが関連する</p><ul><li><p>実際のマルチメディア情報のリアルタイム転送メカニズムは、RTP/RTCPに基本基本としている。</p><ul><li>RTPRTCP:オーディオ、ビデオなどで時間同期化されたストリームを生成·制御する。</li></ul></li><li><p>信頼性のないTCP、非信頼的なUDPなど、様々な伝送プロトコルの上で動作可能。主にUDP上で動作</p><ul><li>このようなプロトコルの助けを受けてRTSP/RTP(RTCP)リアルタイムパケットが配信される。</li></ul></li><li><p>RTP、RTCPとは異なるチャンネルを使用（データ転送ポートとは異なるポート番号として554番を使用）</p><ul><li>RTP、RTCPは同一チャンネルを通じて転送されますが、</li><li>RSTPは、RTPRTCPとは異なるチャネルを使用して全体ストリーミング制御を行う。<br></li></ul></li></ul></li></ul><h4 id="ストリーミング再生に関する制御コマンド"><a href="#ストリーミング再生に関する制御コマンド" class="headerlink" title="ストリーミング再生に関する制御コマンド"></a>ストリーミング再生に関する制御コマンド</h4><p>ㅇ Setup(接続設定)、Play(再生)、Forward、Rewind、Pause(一時停止)、Stop(完全停止)、Resume(再起動)、Record、Teardown(接続解除)など、<br>    - 家庭用VCRをインターネットに適用したもの</p><p>インターネットウェブによる実装例<br><img src="rtsp.jpg" alt="RTSP"></p><blockquote><footer><strong>차재복 (Cha Jae Bok)</strong><cite><a href="http://www.ktword.co.kr/abbr_view.php?m_temp1=1798">www.ktword.co.kr/abbr_view.php?m_temp1=1798</a></cite></footer></blockquote><br><br><br><br><br><hr><h6 style="color: red;"> * もしこのポストに合わない表現や単語がありましたらコメントもしくはメールにて連絡ください。 直ちに修正するようにします。<h6><hr>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/">JAPANESE</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/NEW-TECHNOLOGY/">NEW TECHNOLOGY</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/RTSP-realtime-streaming-protocol/">RTSP, realtime streaming protocol</category>
+      
+      
+      <comments>https://bny64.github.io/2020/11/20/rtsp-jp/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ONVIFとは？</title>
