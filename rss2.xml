@@ -9,8 +9,42 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 21 Nov 2020 12:44:42 GMT</pubDate>
+    <pubDate>Tue, 24 Nov 2020 04:16:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>What is ONVIF?</title>
+      <link>https://bny64.github.io/2020/11/24/ONVIF-en/</link>
+      <guid>https://bny64.github.io/2020/11/24/ONVIF-en/</guid>
+      <pubDate>Tue, 24 Nov 2020 04:13:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;ONVIF(The Open Network Video Interface Forum) is one of the World Open Industrial Forum (*), designed to facilitate the development and u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>ONVIF(The Open Network Video Interface Forum) is one of the World Open Industrial Forum (*), designed to facilitate the development and use of world open standards for interfaces of physical IP-based products for security purposes. ONVIF sets standards for how IP products within video surveillance and other physical security zones can communicate with each other. ONVIF is an organization founded by Axis Communications, Bosch Security Systems and Sony in 2008.<br>To put it simply, it is an <code>international standard protocol</code> used to control cameras, and more specifically, it is a standard protocol used in security devices such as CCTVs, cameras, and viewers.</p><h4 id="Profiles"><a href="#Profiles" class="headerlink" title="Profiles"></a>Profiles</h4><p>Profile S<br>Common features of IP video systems such as video and audio streaming, PTZ options, and relay activation are mentioned.<br>Profile C<br>Explain the state of the door and the common functions of the IP access control system such as control, qualification management and event management management.<br>Profile G<br>Describe video storage, recording, and search.<br>Profile Q<br>Describes device discovery, configuration, and TLS authentication management.<br>Profile A<br>A function constitutes PACS (physical access control system) related items such as access rules, qualification information, and schedules by retrieving information, states, and events.<br>Profile T<br>(Candidate Release RC) Supports video streaming functions such as H.264, H.265 encoding format, imaging settings, and alarm events (motion, unjust change detection, etc..</p><h4 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h4><p>It is a protocol that connects security equipment each other.<br><img src="ONVIF.png" alt="ONVIF"></p><p>Generally, security and video equipment support a variety of protocols, Normally the equipments use our own standard protocol and the <code>International Standard Protocol (ONVIF)</code>.<br>In the case of the<code> International Standard Protocol (ONVIF)</code>, since it does not support functions specific to the relevant device, it may use its own standard protocol.<br>When using ONVIF, new specifications and changes are difficult and time-consuming because they are a universal protocol. However, because it is a world standard, it can be used anywhere in the world.</p><p>Generally, there are socket-based protocols and HTTP-based protocols, but ONVIF uses the HTTP protocol.</p><table><thead><tr><th align="center">Features</th><th align="center">Protocol Type</th></tr></thead><tbody><tr><td align="center">Video, audio, and event sending</td><td align="center">RTP/RTSP protocol</td></tr><tr><td align="center">Control, Settings, Queries</td><td align="center">WSDL, SOAP Protocol</td></tr></tbody></table><p>We use view video using RTP/RTSP, and use WSDL, SOAP to modify IP or settings.<br>An ONVIF protocol does not embody the RTP/RTSP protocol, but serves to inform the RTP/RTSP address so that equipment such as a camera can be used.</p><br><br><br><br><br><hr><h6 style="color:red;"> * If there are any expressions or words that do not fit this post, please contact us by comment or email. I will correct it immediately.<h6>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/">ENGLISH</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/NEW-TECHNOLOGY/">NEW TECHNOLOGY</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/ONVIF/">ONVIF</category>
+      
+      <category domain="https://bny64.github.io/tags/RTP/">RTP</category>
+      
+      <category domain="https://bny64.github.io/tags/RTSP/">RTSP</category>
+      
+      
+      <comments>https://bny64.github.io/2020/11/24/ONVIF-en/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>hexo 検索エンジン最適化</title>
