@@ -9,8 +9,38 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 24 Nov 2020 04:16:38 GMT</pubDate>
+    <pubDate>Tue, 24 Nov 2020 23:52:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>What is RTSP?</title>
+      <link>https://bny64.github.io/2020/11/25/rtsp-en/</link>
+      <guid>https://bny64.github.io/2020/11/25/rtsp-en/</guid>
+      <pubDate>Tue, 24 Nov 2020 23:52:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;code&gt;RTSP (real time streaming protocol)&lt;/code&gt; is a protocol for controlling real-time multimedia streams.&lt;br&gt;RealNetwork, Netscape, an</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><code>RTSP (real time streaming protocol)</code> is a protocol for controlling real-time multimedia streams.<br>RealNetwork, Netscape, and IBM co-developed.</p><h4 id="RTSP-Features"><a href="#RTSP-Features" class="headerlink" title="RTSP Features"></a>RTSP Features</h4><ul><li><p>Infrastructure for Multi-Point Streaming Applications<br>○ RTSP has the purpose of providing protocols for multimedia stream control in multi-branch applications that use both unicast or multicast connectivity in the application layer, but it can be seen as infrastructure rather than protocol.</p><br></li><li><p>Operates by client/server form<br>○ Structure, grammar, and operation are very similar to HTTP.</p><br></li><li><p>Session management<br>○ The setting and control of multiple multimedia sessions is controlled by RTSP.<br>○ Resource management setup and reservation of RTSP can be used with RSVP.</p><br></li><li><p>Several protocols are involved<br>○ The real-time transmission mechanism of real multimedia information is based on RTP/RTCP.</p><ul><li>RTP/RTCP Generates and controls time-synchronized streams in audio, video, etc.</li></ul><p>○ Works on a variety of transport protocols, including reliable TCP and unreliable UDP</p><ul><li>Mainly operating on UDP</li><li>RTSP (RTCP) real-time packets are delivered with the help of these protocols.<br>○ Use a different channel than RTP,RTCP (use 554 times as a different port number than the data transfer port)</li><li>RTP,RTCP is transmitted over the same channel.</li><li>RSTP performs full streaming control using channels different from RTP/RTCP.<br></li></ul></li></ul><h4 id="Control-commands-associated-with-streaming-playback"><a href="#Control-commands-associated-with-streaming-playback" class="headerlink" title="Control commands associated with streaming playback"></a>Control commands associated with streaming playback</h4><p>ㅇ Setup, Play, Forward, Rewind, Pause, Stop, Rescue, Record, TEARDOWN, etc.<br>     - This is a home VCR applied to the Internet.</p><p>ㅇ Examples of implementations by the Internet Web<br><img src="RTSP.jpg" alt="RTSP"></p><blockquote><footer><strong>차재복 (Cha Jae Bok)</strong><cite><a href="http://www.ktword.co.kr/abbr_view.php?m_temp1=1798">www.ktword.co.kr/abbr_view.php?m_temp1=1798</a></cite></footer></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/">ENGLISH</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/NEW-TECHNOLOGY/">NEW TECHNOLOGY</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/RTSP-realtime-streaming-protocol/">RTSP, realtime streaming protocol</category>
+      
+      
+      <comments>https://bny64.github.io/2020/11/25/rtsp-en/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>What is ONVIF?</title>
@@ -201,7 +231,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><code>RTSP(real time streaming protocol)</code> 는 실시간 멀티미디어 스트림을 제어하기 위한 프로토콜이다.<br>RealNetwork사, Netscape사, IBM사 등이 공동개발을 하였다.</p><h4 id="RTSP의-특징"><a href="#RTSP의-특징" class="headerlink" title="RTSP의 특징"></a>RTSP의 특징</h4><ul><li><p>다지점 스트리밍 응용을 위한 기반구조</p><ul><li>응용계층에서 유니캐스트 또는 멀티캐스트 연결 모두를 사용하는 다지점 응용에서, 멀티미디어 스트림 제어를 위한 프로토콜 제공이라는 목적을 가지나, 프로토콜이라기 보다는 기반구조라고 볼 수 있음<br></li></ul></li><li><p>클라이언트/서버 형태로 동작</p><ul><li>구조,문법,동작방식이 HTTP 와 매우 유사<br></li></ul></li><li><p>세션 관리</p><ul><li>다지점 다수개의 멀티미디어 세션의 설정과 제어가 RTSP에 의하여 제어됨</li><li>RTSP의 자원 관리 셋업 및 예약은 RSVP를 가지고 사용 가능<br></li></ul></li><li><p>여러 프로토콜들이 관련됨</p><ul><li><p>실제 멀티미디어 정보의 실시간 전송 매커니즘은 RTP/RTCP에 기본을 두고 있음</p><ul><li>RTP/RTCP : 오디오,비디오 등에서 시간 동기화된 스트림을 생성 및 제어함</li></ul></li><li><p>신뢰적인 TCP, 비신뢰적인 UDP 등 다양한 전송 프로토콜 위에서 동작 가능<br>  주로 UDP 위에서 동작</p><ul><li>이러한 프로토콜의 도움을 받아 RTSP/RTP(RTCP) 실시간 패킷이 전달됨</li></ul></li><li><p>RTP,RTCP와는 다른 채널 사용 (데이터 전송 포트와 다른 포트번호로써 554번 사용)</p><ul><li>RTP,RTCP는 동일 채널을 통해 전송되지만,</li><li>RSTP는 RTP/RTCP와 다른 채널을 사용하여 전체 스트리밍 제어를 수행함<br></li></ul></li></ul></li></ul><h4 id="스트리밍-재생과-관련된-제어-명령어"><a href="#스트리밍-재생과-관련된-제어-명령어" class="headerlink" title="스트리밍 재생과 관련된 제어 명령어"></a>스트리밍 재생과 관련된 제어 명령어</h4><p>ㅇ Setup(연결설정), Play(재생), Forward, Rewind, Pause(일시멈춤), Stop(완전정지), Resume(다시시작), Record, Teardown(연결해제) 등<br>     - 가정용 VCR을 인터넷에 적용한 것임</p><p>ㅇ 인터넷 웹에 의한 구현 例<br><img src="RTSP.jpg" alt="RTSP"></p><blockquote><footer><strong>차재복 (Cha Jae Bok)</strong><cite><a href="http://www.ktword.co.kr/abbr_view.php?m_temp1=1798">www.ktword.co.kr/abbr_view.php?m_temp1=1798</a></cite></footer></blockquote>]]></content:encoded>
+      <content:encoded><![CDATA[<p><code>RTSP(real time streaming protocol)</code> 는 실시간 멀티미디어 스트림을 제어하기 위한 프로토콜이다.<br>RealNetwork사, Netscape사, IBM사 등이 공동개발을 하였다.</p><h4 id="RTSP의-특징"><a href="#RTSP의-특징" class="headerlink" title="RTSP의 특징"></a>RTSP의 특징</h4><ul><li><p>다지점 스트리밍 응용을 위한 기반구조</p><ul><li>응용계층에서 유니캐스트 또는 멀티캐스트 연결 모두를 사용하는 다지점 응용에서, 멀티미디어 스트림 제어를 위한 프로토콜 제공이라는 목적을 가지나, 프로토콜이라기 보다는 기반구조라고 볼 수 있음<br></li></ul></li><li><p>클라이언트/서버 형태로 동작</p><ul><li>구조,문법,동작방식이 HTTP 와 매우 유사<br></li></ul></li><li><p>세션 관리</p><ul><li>다지점 다수개의 멀티미디어 세션의 설정과 제어가 RTSP에 의하여 제어됨</li><li>RTSP의 자원 관리 셋업 및 예약은 RSVP를 가지고 사용 가능<br></li></ul></li><li><p>여러 프로토콜들이 관련됨</p><ul><li><p>실제 멀티미디어 정보의 실시간 전송 매커니즘은 RTP/RTCP에 기본을 두고 있음</p><ul><li>RTP/RTCP : 오디오,비디오 등에서 시간 동기화된 스트림을 생성 및 제어함</li></ul></li><li><p>신뢰적인 TCP, 비신뢰적인 UDP 등 다양한 전송 프로토콜 위에서 동작 가능<br>  주로 UDP 위에서 동작</p><ul><li>이러한 프로토콜의 도움을 받아 RTSP/RTP(RTCP) 실시간 패킷이 전달됨</li></ul></li><li><p>RTP,RTCP와는 다른 채널 사용 (데이터 전송 포트와 다른 포트번호로써 554번 사용)</p><ul><li>RTP,RTCP는 동일 채널을 통해 전송된다.</li><li>RSTP는 RTP/RTCP와 다른 채널을 사용하여 전체 스트리밍 제어를 수행함<br></li></ul></li></ul></li></ul><h4 id="스트리밍-재생과-관련된-제어-명령어"><a href="#스트리밍-재생과-관련된-제어-명령어" class="headerlink" title="스트리밍 재생과 관련된 제어 명령어"></a>스트리밍 재생과 관련된 제어 명령어</h4><p>ㅇ Setup(연결설정), Play(재생), Forward, Rewind, Pause(일시멈춤), Stop(완전정지), Resume(다시시작), Record, Teardown(연결해제) 등<br>     - 가정용 VCR을 인터넷에 적용한 것임</p><p>ㅇ 인터넷 웹에 의한 구현 例<br><img src="RTSP.jpg" alt="RTSP"></p><blockquote><footer><strong>차재복 (Cha Jae Bok)</strong><cite><a href="http://www.ktword.co.kr/abbr_view.php?m_temp1=1798">www.ktword.co.kr/abbr_view.php?m_temp1=1798</a></cite></footer></blockquote>]]></content:encoded>
       
       
       <category domain="https://bny64.github.io/categories/KOREAN/">KOREAN</category>
