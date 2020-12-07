@@ -9,8 +9,50 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 01 Dec 2020 08:08:00 GMT</pubDate>
+    <pubDate>Mon, 07 Dec 2020 03:30:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>TCP/IPとは?</title>
+      <link>https://bny64.github.io/2020/12/07/tcp-ip-jp/</link>
+      <guid>https://bny64.github.io/2020/12/07/tcp-ip-jp/</guid>
+      <pubDate>Mon, 07 Dec 2020 03:30:29 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h4 id=&quot;TCP-IP&quot;&gt;&lt;a href=&quot;#TCP-IP&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP&quot;&gt;&lt;/a&gt;TCP/IP&lt;/h4&gt;&lt;p&gt;インターネットプログラムが通信をするにあたって、HTTP、SFTP、FTPなど様々なプロトコルがあります。 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h4 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h4><p>インターネットプログラムが通信をするにあたって、HTTP、SFTP、FTPなど様々なプロトコルがあります。 インターネットプロトコルで最も多く使用される代表的なプロトコルは、皆さんご存知の通りIPです。 ここで重要なことは<code>TCPIP</code>は階層ではなくプロトコルであることです。<br><code>TCPIP</code>はOSI7  階層とは少し異なる<code>TCPIP</code>の構造的な階層の上で動作します。<br><img src="tcp-ip_1.png" alt="tcpip"><br>OSI7階層とは少し異なる様子です。<br>階層の個数も違って OSI  は7  階層であるのに対し、TCPIP  階層は4階層全てであることが分かります。</p><h4 id="1-ネットワークインタフェース階層-Network-Interface-Layer"><a href="#1-ネットワークインタフェース階層-Network-Interface-Layer" class="headerlink" title="1. ネットワークインタフェース階層 (Network Interface Layer)"></a>1. ネットワークインタフェース階層 (Network Interface Layer)</h4><p>この階層は、Node-To-Node間の信頼性のあるデータ伝送を担う階層です。<br>OSI7階層の物理階層とデータリンク階層の役割を、同ネットワークインタフェース階層が担っています。<br>したがって、MACアドレスがこの階層で使用されます。<br>ネットワークインタフェース階層がデータリンク階層まで担当するので、MACアドレスが使用されます。<br><img src="lan-card.jpg" alt="LANカード"><br>上の装備はランカードです。 正確な名称はNICといい<code>Network Interface Card</code>です。<br>LANカードがないとネットワーク通信はできません。ネットワークインタフェース階層で動作するデバイスです。</p><p>LAN上ではEthernet、TokenRing、FDDIなどがあり、WAN上ではX.25、FrameRelay、PPPなどがあります。</p><h4 id="2-インターネット階層-Internet-Layer"><a href="#2-インターネット階層-Internet-Layer" class="headerlink" title="2. インターネット階層 (Internet Layer)"></a>2. インターネット階層 (Internet Layer)</h4><p>OSI7階層のネットワーク階層を担う階層です。 OSI7階層のようにホスト間のルーティングを担当することになります。<br>インターネット階層で動作するプロトコルは以下の通りです。</p><ul><li><p> IP(Internet  Protocol):非信頼性、非連結指向データグラムプロトコル </p></li><li><p> ARP(Address  Resolution  Protocol):アドレス変換プロトコルです。 IPアドレスをMACアドレスに変換するプロトコル</p></li><li><p> RARP(Reverse  ARP):逆にMACアドレスでIPアドレスを探すプロトコル</p></li><li><p> ICMP（Internet  Control  Message  Protocol）:状態診断メッセージプロトコル。 このプロトコルを利用する代表的なプログラムがping</p></li><li><p> IGMP(Internet  Group  Message  Protocol):マルチキャスト用プロトコル</p></li></ul><h4 id="3-伝送階層-Transport-Layer"><a href="#3-伝送階層-Transport-Layer" class="headerlink" title="3. 伝送階層 (Transport Layer)"></a>3. 伝送階層 (Transport Layer)</h4><p>OSI7階層の伝送階層と同じです。 プロセス間の信頼性のあるデータ伝送を担う階層です。<br>process-to-process転送を担当するためには論理的アドレスが必要ですが、processが使用するポート番号をその論理的アドレスとして使います。<br>転送階層で動作するプロトコルは下記の通りです。</p><ul><li><p> TCP  (Transmission  Control  Protocol):信頼性のある接続指向型プロトコル。 信頼性があるというのは、そのペケットのエラー処理や再送信などでエラーを復旧することです。 そのためTCPのヘッダーに付く情報が多いです。</p></li><li><p> UDP  (User  Datagram  Protocol):非信頼性非接続型プロトコルです。 ペケットを失ったりエラーがあっても対処しないことです。 したがって、UDPヘッダーは簡単な構造を持っています。</p></li></ul><h4 id="4-応用階層-Application-Layer"><a href="#4-応用階層-Application-Layer" class="headerlink" title="4. 応用階層 (Application Layer)"></a>4. 応用階層 (Application Layer)</h4><p>ユーザーと最も近い階層です。 OSI7階層の5階層から7階層までの機能を担っています。<br>サーバやクライアントアプリケーションがこの階層で動作します。 私たちが知っているブラウザやテルネットのようなサービスがこの階層で動作し、動作するためには転送階層のアドレス、つまりポート番号を使用します。 例えば、httpが88番ポートを使用することと同じです。<br>応用階層で動作するプロトコルは以下の通りです。</p><ul><li><p> HTTP(Hyper-Text  Transfer  Protocol):TCPベースのプロトコルでポート番号80番を使用</p></li><li><p> Telnet  :TCP  ポート番号23番を使用します。 遠隔ターミナルを接続する際にこのプロトコルを使用</p></li><li><p>SSH(Secure  Shell):テルネットのようなサービスはセキュリティに脆弱。 パスワードが暗号化されていないため、そのまま表示されます。 これを補完したものがSSHです。 ポート番号22番を使用します。 SFTP  のようなプロトコルも22  番ポートで主要使用します。</p></li><li><p> FTP(File  Transfer  Protocol):  ファイル転送プロトコル。 ファイルのダウンロードやアップロードにFTPを使用。 FTPは、ファイルのアップロードやダウンロードの際、信頼性を重要視するため、TCPで動作します。 2  つのポートを使用します。</p></li></ul><p>TCPポート20番はデータ転送のための用途、TCPポート21番は制御用として使用します。</p><ul><li><p> SMTP  (Simple  Mail  Transfer  Protocol):メール転送プロトコルです。 TCP  上で動作し、ポートは  25  番を使用します。</p></li><li><p> POP3（Post  Office  Protocol  Version  3）:メール受信用プロトコルです。 アウトルックのようなプログラムはPOP3というプロトコルを使って動作します。 TCP  ポート110番を使用します。</p></li><li><p> DNS  (Domain  Name  System):ドメイン名に対するホスト情報を提供します。 基本的にUDP  上で動作します。 基本的に失敗したらもう一度要請すればいいですし、それほど重要な情報ではないからです。 しかし、信頼性を要する場合にはTCP上でも動作します。 データが長い場合、同じ時にTCPベースで動作できます。</p></li></ul><p>UDP、TCP  ポート53番を使用します。</p><p>このように、ポート番号が特定のプロトコルが使用していては使えないポートがあります。 このようなポートをwell-known  portといいます。</p><blockquote><footer><strong>参考 :</strong><cite><a href="https://reakwon.tistory.com/68">reakwon.tistory.com/68</a></cite></footer></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/">JAPANESE</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/NEW-TECHNOLOGY/">NEW TECHNOLOGY</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/TCP/">TCP</category>
+      
+      <category domain="https://bny64.github.io/tags/IP/">IP</category>
+      
+      <category domain="https://bny64.github.io/tags/TCP-IP/">TCP?IP</category>
+      
+      <category domain="https://bny64.github.io/tags/TCP-%E6%A6%82%E5%BF%B5/">TCP 概念</category>
+      
+      <category domain="https://bny64.github.io/tags/TCP-%E6%84%8F%E5%91%B3/">TCP 意味</category>
+      
+      <category domain="https://bny64.github.io/tags/IP-%E6%A6%82%E5%BF%B5/">IP 概念</category>
+      
+      <category domain="https://bny64.github.io/tags/IP-%E6%84%8F%E5%91%B3/">IP 意味</category>
+      
+      
+      <comments>https://bny64.github.io/2020/12/07/tcp-ip-jp/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>TCP/IP란?</title>
