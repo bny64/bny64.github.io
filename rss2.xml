@@ -9,8 +9,48 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 07 Dec 2020 03:30:30 GMT</pubDate>
+    <pubDate>Wed, 09 Dec 2020 00:08:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>What is TCP/IP ?</title>
+      <link>https://bny64.github.io/2020/12/09/tcp-ip-en/</link>
+      <guid>https://bny64.github.io/2020/12/09/tcp-ip-en/</guid>
+      <pubDate>Wed, 09 Dec 2020 00:08:32 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h4 id=&quot;TCP-IP&quot;&gt;&lt;a href=&quot;#TCP-IP&quot; class=&quot;headerlink&quot; title=&quot;TCP / IP&quot;&gt;&lt;/a&gt;TCP / IP&lt;/h4&gt;&lt;p&gt;There are various protocols for Internet programs </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h4 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP / IP"></a>TCP / IP</h4><p>There are various protocols for Internet programs to communicate with, such as HTTP, SFTP and FTP. The most common protocol used in Internet protocols, as you all know, is IP, and the important thing here is that <code>TCP/IP</code> is not a hierarchy, but a protocol.<br><code>TCP/IP</code> runs on top of <code>TCP/IP</code> structural hierarchy slightly different from OSI7 hierarchy.<br><img src="tcp-ip_1.png" alt="tcp/ip"><br>It looks a little different from the OSI7 hierarchy.<br>You can see that the number of tiers is different, OSI is seven, while the TCP/IP tier is all four.</p><h4 id="1-Network-Interface-Layer"><a href="#1-Network-Interface-Layer" class="headerlink" title="1. Network Interface Layer"></a>1. Network Interface Layer</h4><p>This tier is responsible for reliable data transmission between Node and Node.<br>The network interface hierarchy is responsible for the physical and data link tiers of the OSI7 hierarchy.<br>Therefore, MAC addresses are used in this hierarchy.<br>MAC addresses are used because the network interface hierarchy covers the data link hierarchy.<br><img src="lan-card.jpg" alt="LAN CARD"><br>The equipment above is a LAN card. The exact name is NIC and <code>Network Interface Card</code>.<br>Network communication is not possible without a LAN card. A device that operates in the network interface hierarchy.</p><p>LAN includes Ethernet, TokenRing, FDDI, X.25, FrameRelay, PPP, and so on.</p><h4 id="2-Internet-Layer"><a href="#2-Internet-Layer" class="headerlink" title="2. Internet Layer"></a>2. Internet Layer</h4><p>The network hierarchy of the OSI7 hierarchy. You will be responsible for routing between hosts, such as the OSI7 hierarchy.<br>The protocols that work in the Internet hierarchy are:</p><ul><li><p>IP (Internet Protocol) : Untrusted, unconjugated  Datagram Protocol </p></li><li><p>Address Resolution Protocol (ARP) : Address translation protocol. Protocol that converts IP addresses to MAC addresses</p></li><li><p>RARP (Reverse ARP) : a protocol that looks for an IP address by MAC address.</p></li><li><p>ICMP (Internet Control Message Protocol) : State Diagnostic Message Protocol, which is used by leading programs to ping</p></li><li><p>Internet Group Message Protocol (IGMP) : protocol for multicast</p></li></ul><h4 id="3-Transport-Layer"><a href="#3-Transport-Layer" class="headerlink" title="3. Transport Layer"></a>3. Transport Layer</h4><p>Same as the transmission hierarchy in OSI7 hierarchy. A hierarchy responsible for reliable data transmission between processes.<br>A logical address is required to be responsible for process-to-process forwarding, but the port number used by the process is used as its logical address.<br>The protocols that work in the transport hierarchy are:</p><ul><li><p>TCP (Transmission Control Protocol) : A reliable connection-oriented protocol that provides error recovery through error handling and retransmission of the packets. Therefore, there is a lot of information attached to the TCP header.</p></li><li><p>User Datagram Protocol (UDP) : Untrusted and unreliable protocol. Do not take action if you lose your packet or if there is an error. Therefore, UDP headers have a simple structure.</p></li></ul><h4 id="4-Application-Layer"><a href="#4-Application-Layer" class="headerlink" title="4 . Application Layer"></a>4 . Application Layer</h4><p>The tier closest to the user. It is responsible for everything from 5 to 7 OSI tiers.<br>Server and client applications operate in this hierarchy. Services such as browsers and telnet that we know work in this hierarchy and use the forwarding hierarchy address, or port number, to work in order to work in this hierarchy. For example, http is equivalent to using port 88.<br>The protocols that work in the application hierarchy are:</p><ul><li><p>HTTP (Hyper-Text Transfer Protocol) : TCP-based protocol using port number 80.</p></li><li><p>Telnet : Use TCP port number 23. Use this protocol to connect remote terminals</p></li><li><p>SSH (Secure Shell) : Services like Telnet are vulnerable to security. Because the password is unencrypted, it is displayed as is. SSH is a complement to this. Use port number 22. A protocol such as SFTP is also used primarily on port 22.</p></li><li><p>FTP (File Transfer Protocol) : A file transfer protocol. FTP is used to download and upload files. FTP works with TCP because reliability is important when uploading or downloading files. Two ports are used.</p></li></ul><p>TCP port 20 is used for data transfer and TCP port 21 is used for control.</p><ul><li><p>Simple Mail Transfer Protocol (SMTP) : Mail transfer protocol. It runs over TCP and the port uses number 25.</p></li><li><p>POP3 (Post Office Protocol Version 3) : The protocol for receiving mail. Programs such as Outlook work using a protocol called POP3. Use TCP port 110.</p></li><li><p>Domain Name System (DNS) : Provides host information for a domain name. It basically runs over UDP. Basically, if you fail, you can request it again, and it’s not that important information. However, it also runs over TCP if reliability is required. Long data can operate on a TCP basis at the same time.</p></li></ul><p>Use UDP, TCP port 53.</p><p>As you can see, some ports cannot be used if the port number is used by a specific protocol. These ports are called well-known ports.</p><blockquote><footer><strong>reference :</strong><cite><a href="https://reakwon.tistory.com/68">reakwon.tistory.com/68</a></cite></footer></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/">ENGLISH</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/NEW-TECHNOLOGY/">NEW TECHNOLOGY</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/TCP/">TCP</category>
+      
+      <category domain="https://bny64.github.io/tags/IP/">IP</category>
+      
+      <category domain="https://bny64.github.io/tags/TCP-IP/">TCP/IP</category>
+      
+      <category domain="https://bny64.github.io/tags/TCP-Meaning/">TCP Meaning</category>
+      
+      <category domain="https://bny64.github.io/tags/IP-Concept/">IP Concept</category>
+      
+      <category domain="https://bny64.github.io/tags/IP-Meaning/">IP Meaning</category>
+      
+      
+      <comments>https://bny64.github.io/2020/12/09/tcp-ip-en/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>TCP/IPとは?</title>
