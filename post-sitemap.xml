@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://bny64.github.io/2020/12/12/http-socket-en/</loc>
+        <lastmod>2020-12-12T00:44:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://bny64.github.io/2020/12/11/http-socket/</loc>
+        <lastmod>2020-12-11T04:41:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://bny64.github.io/2020/12/09/tcp-ip-en/</loc>
         <lastmod>2020-12-11T01:00:40.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -27,14 +43,6 @@
     <url>
         <loc>https://bny64.github.io/2020/12/01/tcp-ip/</loc>
         <lastmod>2020-12-11T01:00:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://bny64.github.io/2020/12/11/http-socket/</loc>
-        <lastmod>2020-12-11T01:00:24.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
