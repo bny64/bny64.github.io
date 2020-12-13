@@ -9,8 +9,43 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 12 Dec 2020 01:08:16 GMT</pubDate>
+    <pubDate>Sun, 13 Dec 2020 01:19:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Http通信とSocket通信の違い</title>
+      <link>https://bny64.github.io/2020/12/13/http-socket-jp/</link>
+      <guid>https://bny64.github.io/2020/12/13/http-socket-jp/</guid>
+      <pubDate>Sun, 13 Dec 2020 01:19:14 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。&lt;/p&gt;
+&lt;h4 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。</p><h4 id="Http-通信"><a href="#Http-通信" class="headerlink" title="Http 通信"></a>Http 通信</h4><p><strong>クライアントのリクエストがある場合のみ、サーバーが応答(Response)して当該情報を送信し、すぐに接続を終了する方式</strong></p><p>Http通信はClientの要請があるときだけServerが応答して処理をした後に連結を絶つ方法です。 このような接続方法は<code>Clientが要請を送る場合にのみServerが応答するワン・ウェイ・コニュニケーション</code>で、ServerがClientで要請を送ることはできません。 理解を助けるために皆さんがこのブログの内容を見るためにブログに入ってくる状況を例に挙げてみます。 皆さんがこのブログのためのリンクをクリックした瞬間にClient(ウェブ)はServer(ウェブサーバ)にこの文に対する内容を送ってほしいと要請をしたのです。 この文に対する内容を受けた後は、連結が終了されます。 そのために要請を送るとき、内容を待つ時間と共に連結する時間が入るようになります。 このようなHttp通信は、リアルタイム接続がなく、<code>必要な場合のみServerにアクセスするコンテンツ中心のデータを使用するとき用意</code>です。 もしブログに対する内容を要請するため、リアルタイムでつなぐを維持するSocket通信を使用することになると、ブログの内容を受けた後も、引き続き通信のための連結が成立しており、負荷がかかります。 一般的にモバイルアプリケーションは必要な場合のみServerで情報を要請する場合が多いが、このようなWeb ServerでHttp通信を主に使用して費用や保守などほとんどの方面でいいです。</p><p><img src="http.png" alt="http 通信"></p><h6 id="Http-通信の特徴"><a href="#Http-通信の特徴" class="headerlink" title="Http 通信の特徴"></a>Http 通信の特徴</h6><ul><li> クライアントがリクエストを送信した場合にのみ、サーバーが応答するワン・ウェイ・コニュニケーションである。</li><li> サーバーからの応答を受けた後は、接続がすぐに終了する。 </li><li> リアルタイムの接続ではなく、必要な場合にのみサーバーに要請を送る状況に有用である。</li><li> 要請を送ってサーバーの応答を待つアプリケーション(Android or Ios)の開発に主に使われる。</li></ul><h4 id="Socket-通信"><a href="#Socket-通信" class="headerlink" title="Socket 通信"></a>Socket 通信</h4><p><strong>サーバーとクライアントが特定ポートを通じてリアルタイムでツーウエー・コミュニケーションする方式</strong></p><p>Socket通信はHttp通信とは違って、<code>ServerとClientが特定Portを通じて連結を成立しており、リアルタイムでツーウエー・コミュニケーションする方式です</code>。 Clientのみ必要な場合に要請を送るHttp通信とは違って、Socket通信はServerもClientで要請を送ることができ、ずっとつながりを維持する連結志向型通信であるため、<code>リアルタイムの通信が必要な場合によく使用</code>されます。 例えば、リアルタイムStreamingの中継やリアルタイムでチャットと一緒に即座に情報をやり取りする場合に使用します。 例えば、リアルタイム動画StreamingサービスをHttp通信で具現したと仮定します。 このような場合に使用者がサーバに動画を要請するためには動画が終了される瞬間まで継続してHttp通信を送らなければならない、このような構造は引き続き連結を要請するために負荷がかかります。 従って、このような場合にはSocketを通じて具現することが適しています。</p><p><img src="socket.png" alt="socket 通信"></p><h6 id="Socket-通信の特徴"><a href="#Socket-通信の特徴" class="headerlink" title="Socket 通信の特徴"></a>Socket 通信の特徴</h6><p>-ServerとClientがずっとつながりを維持するツーウエー・コミュニケーションである。<br>-ServerとClientがリアルタイムでデータをやり取りする状況が必要な場合に使用される。<br>-リアルタイム動画Streamingやオンラインゲームなどのような場合によく使用される。</p><blockquote><footer><strong>参考</strong><cite><a href="https://mangkyu.tistory.com/48">mangkyu.tistory.com/48</a></cite></footer></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/">JAPANESE</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/JAPANESE/STUDY/TECHNICAL-TERMS/">TECHNICAL TERMS</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/http-%E9%80%9A%E4%BF%A1/">http 通信</category>
+      
+      <category domain="https://bny64.github.io/tags/socket-%E9%80%9A%E4%BF%A1/">socket 通信</category>
+      
+      <category domain="https://bny64.github.io/tags/http-%E9%80%9A%E4%BF%A1-socket-%E9%80%9A%E4%BF%A1%E3%81%AE%E9%81%95%E3%81%84/">http 通信 socket 通信の違い</category>
+      
+      
+      <comments>https://bny64.github.io/2020/12/13/http-socket-jp/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Http communication and Socket communication difference</title>

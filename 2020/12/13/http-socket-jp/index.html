@@ -6,19 +6,30 @@
     
 
     
-    <title>Tag: ONVIF 개념 | bny-blog</title>
+    <title>Http通信とSocket通信の違い | bny-blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="bny-blog">
-<meta property="og:url" content="https://bny64.github.io/tags/ONVIF-%EA%B0%9C%EB%85%90/index.html">
-<meta property="og:site_name" content="bny-blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Nam Yul Bae">
-<meta name="twitter:card" content="summary">
+    <meta name="keywords" content="http 通信,socket 通信,http 通信 socket 通信の違い">
     
-    <link rel="canonical" href="https://bny64.github.io/tags/onvif-개념/"> <!-- hexo-auto-canonical package에서 추가 -->
+    <meta name="description" content="一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。 Http 通信クライアントのリクエストがある場合のみ、サーバーが応答(Response)して当該情報を送信し、すぐに接続を終了する方式 Htt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Http通信とSocket通信の違い">
+<meta property="og:url" content="https://bny64.github.io/2020/12/13/http-socket-jp/index.html">
+<meta property="og:site_name" content="bny-blog">
+<meta property="og:description" content="一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。 Http 通信クライアントのリクエストがある場合のみ、サーバーが応答(Response)して当該情報を送信し、すぐに接続を終了する方式 Htt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://bny64.github.io/images/20201211HTTPSOCKET/httpandsocket.png">
+<meta property="article:published_time" content="2020-12-13T01:19:14.000Z">
+<meta property="article:modified_time" content="2020-12-13T01:19:16.000Z">
+<meta property="article:author" content="Nam Yul Bae">
+<meta property="article:tag" content="http 通信">
+<meta property="article:tag" content="socket 通信">
+<meta property="article:tag" content="http 通信 socket 通信の違い">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bny64.github.io/images/20201211HTTPSOCKET/httpandsocket.png">
+    
+    <link rel="canonical" href="https://bny64.github.io/2020/12/13/http-socket-jp/"> <!-- hexo-auto-canonical package에서 추가 -->
     
 
     
@@ -158,73 +169,183 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>ONVIF 개념</em>
+    <a class="page-title-link" href="/categories/JAPANESE/">JAPANESE</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JAPANESE/STUDY/">STUDY</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JAPANESE/STUDY/TECHNICAL-TERMS/">TECHNICAL TERMS</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-http-socket-jp" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2020/11/15/ONVIF/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/20201115ONVIF/ONVIF.png)" alt="ONVIF란?" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier data-disqus-url="https://bny64.github.io/2020/11/15/ONVIF/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/KOREAN/">KOREAN</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/KOREAN/STUDY/">STUDY</a>
-            </div>
-            <div class="date"><time datetime="2020-11-15T06:44:51.000Z" itemprop="datePublished">2020-11-15</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2020/11/15/ONVIF/">ONVIF란?</a>
+        Http通信とSocket通信の違い
         </h1>
     
 
-        <p class="article-excerpt">
-            ONVIF(Open Network Video Interface Forum 오픈 네트워크 비디오 인터페이스 포럼[*], 온비프)는 세계 개방형 산업 포럼의 하나로서, 보안 목적의 물리적인 IP 기반 제품들의 인터페이스를 위한 세계 개방형 표준의 개발 및 이용을 용이하게 하는 것을 목적으로 한다. ONVIF는 동영상 감시 및 기타 물리적인 방범 지역 내의 IP
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2020/12/13/http-socket-jp/" class="article-date">
+       <time datetime="2020-12-13T01:19:14.000Z" itemprop="datePublished">2020-12-13</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2020/12/13/http-socket-jp/" class="article-date">
+     <time datetime="2020-12-13T01:19:16.000Z" itemprop="dateModified">2020-12-13</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/http-%E9%80%9A%E4%BF%A1/" rel="tag">http 通信</a>, <a class="tag-link-link" href="/tags/http-%E9%80%9A%E4%BF%A1-socket-%E9%80%9A%E4%BF%A1%E3%81%AE%E9%81%95%E3%81%84/" rel="tag">http 通信 socket 通信の違い</a>, <a class="tag-link-link" href="/tags/socket-%E9%80%9A%E4%BF%A1/" rel="tag">socket 通信</a>
     </div>
-</article>
-    
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <p>一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。</p>
+<h4 id="Http-通信"><a href="#Http-通信" class="headerlink" title="Http 通信"></a>Http 通信</h4><p><strong>クライアントのリクエストがある場合のみ、サーバーが応答(Response)して当該情報を送信し、すぐに接続を終了する方式</strong></p>
+<p>Http通信はClientの要請があるときだけServerが応答して処理をした後に連結を絶つ方法です。 このような接続方法は<code>Clientが要請を送る場合にのみServerが応答するワン・ウェイ・コニュニケーション</code>で、ServerがClientで要請を送ることはできません。 理解を助けるために皆さんがこのブログの内容を見るためにブログに入ってくる状況を例に挙げてみます。 皆さんがこのブログのためのリンクをクリックした瞬間にClient(ウェブ)はServer(ウェブサーバ)にこの文に対する内容を送ってほしいと要請をしたのです。 この文に対する内容を受けた後は、連結が終了されます。 そのために要請を送るとき、内容を待つ時間と共に連結する時間が入るようになります。 このようなHttp通信は、リアルタイム接続がなく、<code>必要な場合のみServerにアクセスするコンテンツ中心のデータを使用するとき用意</code>です。 もしブログに対する内容を要請するため、リアルタイムでつなぐを維持するSocket通信を使用することになると、ブログの内容を受けた後も、引き続き通信のための連結が成立しており、負荷がかかります。 一般的にモバイルアプリケーションは必要な場合のみServerで情報を要請する場合が多いが、このようなWeb ServerでHttp通信を主に使用して費用や保守などほとんどの方面でいいです。</p>
+<p><img src="http.png" alt="http 通信"></p>
+<h6 id="Http-通信の特徴"><a href="#Http-通信の特徴" class="headerlink" title="Http 通信の特徴"></a>Http 通信の特徴</h6><ul>
+<li> クライアントがリクエストを送信した場合にのみ、サーバーが応答するワン・ウェイ・コニュニケーションである。</li>
+<li> サーバーからの応答を受けた後は、接続がすぐに終了する。 </li>
+<li> リアルタイムの接続ではなく、必要な場合にのみサーバーに要請を送る状況に有用である。</li>
+<li> 要請を送ってサーバーの応答を待つアプリケーション(Android or Ios)の開発に主に使われる。</li>
+</ul>
+<h4 id="Socket-通信"><a href="#Socket-通信" class="headerlink" title="Socket 通信"></a>Socket 通信</h4><p><strong>サーバーとクライアントが特定ポートを通じてリアルタイムでツーウエー・コミュニケーションする方式</strong></p>
+<p>Socket通信はHttp通信とは違って、<code>ServerとClientが特定Portを通じて連結を成立しており、リアルタイムでツーウエー・コミュニケーションする方式です</code>。 Clientのみ必要な場合に要請を送るHttp通信とは違って、Socket通信はServerもClientで要請を送ることができ、ずっとつながりを維持する連結志向型通信であるため、<code>リアルタイムの通信が必要な場合によく使用</code>されます。 例えば、リアルタイムStreamingの中継やリアルタイムでチャットと一緒に即座に情報をやり取りする場合に使用します。 例えば、リアルタイム動画StreamingサービスをHttp通信で具現したと仮定します。 このような場合に使用者がサーバに動画を要請するためには動画が終了される瞬間まで継続してHttp通信を送らなければならない、このような構造は引き続き連結を要請するために負荷がかかります。 従って、このような場合にはSocketを通じて具現することが適しています。</p>
+<p><img src="socket.png" alt="socket 通信"></p>
+<h6 id="Socket-通信の特徴"><a href="#Socket-通信の特徴" class="headerlink" title="Socket 通信の特徴"></a>Socket 通信の特徴</h6><p>-ServerとClientがずっとつながりを維持するツーウエー・コミュニケーションである。<br>-ServerとClientがリアルタイムでデータをやり取りする状況が必要な場合に使用される。<br>-リアルタイム動画Streamingやオンラインゲームなどのような場合によく使用される。</p>
+<blockquote><footer><strong>参考</strong><cite><a target="_blank" rel="external nofollow noopener noreferrer" href="https://mangkyu.tistory.com/48">mangkyu.tistory.com/48</a></cite></footer></blockquote>
         </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://bny64.github.io/2020/12/13/http-socket-jp/" data-id="ckimfx4wt0000gouegwjzcctq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Nam Yul Bae"
+        },
+        "headline": "Http通信とSocket通信の違い",
+        "image": "https://bny64.github.io/images/20201211HTTPSOCKET/httpandsocket.png",
+        "keywords": "http 通信 socket 通信 http 通信 socket 通信の違い",
+        "genre": "JAPANESE STUDY TECHNICAL TERMS",
+        "datePublished": "2020-12-13",
+        "dateCreated": "2020-12-13",
+        "dateModified": "2020-12-13",
+        "url": "https://bny64.github.io/2020/12/13/http-socket-jp/",
+        "description": "一般的に、デバイスで必要とされるデータはサーバーで管理します。 ネットワークを通じてサーバからデータを取得するための通信方式には、大きく分けてHttp通信とSocket通信の2種類がありますが、今日はこの2つの通信方式の違いについて見ていきたいと思います。
+Http 通信クライアントのリクエストがある場合のみ、サーバーが応答(Response)して当該情報を送信し、すぐに接続を終了する方式
+Htt",
+        "wordCount": 54
+    }
+</script>
+
+</article>
+
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
 
-    </div></section>
+    
+    </section>
 
 
 
@@ -246,6 +367,19 @@ ga('send', 'pageview');
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2020/12/12/http-socket-en/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Http communication and Socket communication difference</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -443,11 +577,13 @@ ga('send', 'pageview');
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'https://bny64.github.io/2020/12/13/http-socket-jp/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
