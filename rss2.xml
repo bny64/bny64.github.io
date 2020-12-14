@@ -9,8 +9,43 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 13 Dec 2020 01:19:16 GMT</pubDate>
+    <pubDate>Mon, 14 Dec 2020 13:10:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>nodejs 최신 버전으로 업데이트 하기</title>
+      <link>https://bny64.github.io/2020/12/14/update-latest-nodeversion/</link>
+      <guid>https://bny64.github.io/2020/12/14/update-latest-nodeversion/</guid>
+      <pubDate>Mon, 14 Dec 2020 13:10:28 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;현재 사용하는 nodejs 버전이 구버전이라면 모듈을 사용하다 버전이 안맞는 경우가 생길 수 있습니다.&lt;br&gt;이럴경우에 nodejs을 최신 버전으로 업데이트 해야할 경우가 생기는데 하는 방법은 다음과 같습니다.&lt;/p&gt;
+&lt;figure class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>현재 사용하는 nodejs 버전이 구버전이라면 모듈을 사용하다 버전이 안맞는 경우가 생길 수 있습니다.<br>이럴경우에 nodejs을 최신 버전으로 업데이트 해야할 경우가 생기는데 하는 방법은 다음과 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v &#x2F;&#x2F;node 버전 확인</span><br><span class="line">npm cache clean -f &#x2F;&#x2F;캐시 삭제</span><br><span class="line">npm install -g n &#x2F;&#x2F;nodejs 버전관리 플러그인</span><br></pre></td></tr></table></figure><p><code>※ 간혹 버전관리 플러그인을 설치하는 중 버전이 너무 낮아 설치가 안되는 경우가 있는데 이 때에는 홈페이지에서 직접 재설치 해야합니다.</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">n latest &#x2F;&#x2F;최신버전</span><br><span class="line">n lts &#x2F;&#x2F;lts 버전</span><br><span class="line">n stable &#x2F;&#x2F;안정버전</span><br></pre></td></tr></table></figure><p>nodejs를 업데이트 한 후 npm도 업데이트 합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm -v &#x2F;&#x2F;npm 버전 확인</span><br><span class="line">npm i -g npm &#x2F;&#x2F;npm 업데이트(global 경로)</span><br></pre></td></tr></table></figure><p>마지막 nodejs, npm 버전 확인</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p><img src="updatenode.png" alt="버전 확인"></p>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/KOREAN/">KOREAN</category>
+      
+      <category domain="https://bny64.github.io/categories/KOREAN/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/KOREAN/STUDY/NODEJS/">NODEJS</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/nodejs-%EC%B5%9C%EC%8B%A0-%EB%B2%84%EC%A0%84/">nodejs 최신 버전</category>
+      
+      <category domain="https://bny64.github.io/tags/nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/">nodejs 업데이트</category>
+      
+      <category domain="https://bny64.github.io/tags/nodejs-%EC%B5%9C%EC%8B%A0-%EB%B2%84%EC%A0%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/">nodejs 최신 버전 업데이트</category>
+      
+      
+      <comments>https://bny64.github.io/2020/12/14/update-latest-nodeversion/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Http通信とSocket通信の違い</title>
