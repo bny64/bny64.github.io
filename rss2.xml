@@ -9,8 +9,42 @@
     <atom:link href="https://bny64.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 14 Dec 2020 13:10:30 GMT</pubDate>
+    <pubDate>Tue, 15 Dec 2020 00:19:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Update to the latest version of nodejs</title>
+      <link>https://bny64.github.io/2020/12/15/update-latest-nodeversion-en/</link>
+      <guid>https://bny64.github.io/2020/12/15/update-latest-nodeversion-en/</guid>
+      <pubDate>Tue, 15 Dec 2020 00:19:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;If the current nodejs version is an out-of-date version, it may be possible to use a module that does not match the current version.&lt;br&gt;I</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>If the current nodejs version is an out-of-date version, it may be possible to use a module that does not match the current version.<br>In this case, you may need to update your nodejs to the latest version, as follows:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v &#x2F;&#x2F;Check node version</span><br><span class="line">npm cache clean -f &#x2F;&#x2F;Delete cache</span><br><span class="line">npm install -g n &#x2F;&#x2F;nodejs version-management plug-in</span><br></pre></td></tr></table></figure><p><code>※ Occasionally, while installing the version management plug-in, the version is too low to be installed, in this case, you must reinstall it directly from the website.</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">n latest &#x2F;&#x2F;the latest version</span><br><span class="line">n lts &#x2F;&#x2F;ls version</span><br><span class="line">n stable &#x2F;&#x2F;stable version</span><br></pre></td></tr></table></figure><p>Update nodejs and then update npm.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm -v &#x2F;&#x2F;Check npm version</span><br><span class="line">npm i -g npm &#x2F;&#x2F;npm update (global path)</span><br></pre></td></tr></table></figure><p>Check last nodejs, npm version</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p><img src="updatenode.png" alt="Version Check"></p>]]></content:encoded>
+      
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/">ENGLISH</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/">STUDY</category>
+      
+      <category domain="https://bny64.github.io/categories/ENGLISH/STUDY/NODEJS/">NODEJS</category>
+      
+      
+      <category domain="https://bny64.github.io/tags/latest-version-of-nodejs/">latest version of nodejs</category>
+      
+      <category domain="https://bny64.github.io/tags/Update-nodejs/">Update nodejs</category>
+      
+      <category domain="https://bny64.github.io/tags/Update-latest-version-of-nodejs/">Update latest version of nodejs</category>
+      
+      
+      <comments>https://bny64.github.io/2020/12/15/update-latest-nodeversion-en/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>nodejs 최신 버전으로 업데이트 하기</title>
